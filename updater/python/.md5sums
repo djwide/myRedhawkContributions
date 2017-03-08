@@ -1,0 +1,6 @@
+8bfcd22353c3a57fee561ad86ee2a56b  reconf
+77a7f3124550342d48d0aba1c123d551  updater.py
+d9a83001e2febab912465df3e9369895  updater_base.py
+0eb6ec1caf5ae743df21c3f23e178b0d  configure.ac
+88bbb6d890a352adc86732429e88d73d  Makefile.am
+edc8bbc978ffbc348f9150f93f4c11f1  Makefile.am.ide

@@ -1,0 +1,12 @@
+6c5ad83a69c97e3b57c3cf41b9f179c1  GPS_Receiver_base.cpp
+39eee990adf5eb753068172928405e43  main.cpp
+8bfcd22353c3a57fee561ad86ee2a56b  reconf
+d135e388b7c529d2a137ae9e45401b57  GPS_Receiver.cpp
+8906bcea8797ad93123fc92dc06bcd83  GPS_Receiver.h
+dab91bf4f50db279c4fdc43dbc57638f  configure.ac
+916449ac59aaab6f7e007334369dac36  Makefile.am
+4f2a92a4a48f823565b9c16d11345e2b  Makefile.am.ide
+893a21152414394d331235d84ad8f564  port_impl.cpp
+b87651ea3565402473fb088004430fbf  build.sh
+ceb0d0f748e141167c3322a66b5231ad  port_impl.h
+154c4b003c1b5ee0ca7c4a07b82f93ed  GPS_Receiver_base.h

@@ -1,0 +1,6 @@
+60683b8953b40169e2510f45d5f4b60b  dbwriter.py
+8bfcd22353c3a57fee561ad86ee2a56b  reconf
+7b3129fd891c62e132ba641bec9a2b5f  configure.ac
+a7bb98930c2c870c24db6acaeee68ee9  Makefile.am
+eab3a7c58a03453ffafb3b3089e1edea  Makefile.am.ide
+46802a3e1b4865f818b2f16d969c1707  dbwriter_base.py

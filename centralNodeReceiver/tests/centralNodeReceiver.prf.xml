@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties PUBLIC "-//JTRS//DTD SCA V2.2.2 PRF//EN" "properties.dtd">
+<properties>
+  <struct id="accumMess" mode="readwrite">
+    <simple id="nodeID" type="octet" complex="false"/>
+    <simple id="aveA" type="float"/>
+    <simple id="wavelengthA" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="locLongA" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="locLatA" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="compassA" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="aoaA" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <configurationkind kindtype="message"/>
+  </struct>
+  <struct id="fromCentToUpdate" mode="readwrite">
+    <simple id="aveUp1" type="float"/>
+    <simple id="aveUp2" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="aveUp3" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="lobUp1" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="lobUp2" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="lobUp3" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="lat1" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="lat2" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="lat3" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="long1" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="long2" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="long3" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <configurationkind kindtype="message"/>
+  </struct>
+  <struct id="fromCentToDB" mode="readwrite">
+    <simple id="ave" type="float"/>
+    <simple id="lat" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="long" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="freq" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="aoa" mode="readwrite" type="octet">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="node" mode="readwrite" type="octet">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="wave" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="comp" mode="readwrite" type="octet">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <configurationkind kindtype="property"/>
+  </struct>
+</properties>

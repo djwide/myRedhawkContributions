@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties PUBLIC "-//JTRS//DTD SCA V2.2.2 PRF//EN" "properties.dtd">
+<properties>
+  <struct id="fromUpToInsert" mode="readwrite">
+    <simple id="X" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="Y" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <configurationkind kindtype="message"/>
+  </struct>
+  <struct id="fromCentToUpdate" mode="readwrite">
+    <simple id="aveUp1" type="float"/>
+    <simple id="aveUp2" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="aveUp3" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="lobUp1" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="lobUp2" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="lobUp3" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="lat1" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="lat2" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="lat3" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="long1" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="long2" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="long3" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <configurationkind kindtype="message"/>
+  </struct>
+</properties>

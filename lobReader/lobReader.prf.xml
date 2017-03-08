@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties PUBLIC "-//JTRS//DTD SCA V2.2.2 PRF//EN" "properties.dtd">
+<properties>
+  <struct id="Compass" mode="readwrite">
+    <simple id="compass" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <simple id="aoa" mode="readwrite" type="float">
+      <kind kindtype="property"/>
+      <action type="external"/>
+    </simple>
+    <configurationkind kindtype="message"/>
+  </struct>
+</properties>
