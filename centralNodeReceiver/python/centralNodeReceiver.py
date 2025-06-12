@@ -1,9 +1,13 @@
-'''
+"""centralNodeReceiver component.
+
+This module receives aggregated measurements from remote nodes and
+forwards a consolidated update to other components as well as a database
+writer.  It is based on early experimental code authored by Cadet David
+Weidman (USMA Class of 2016).
+
 Author:
 Cadet David Weidman USMA Class of 2016
-321.297.9323
-david.j.weidman2.mil@mail.mil
-'''
+"""
 from ossie.resource import start_component
 import logging
 from ossie.threadedcomponent import NOOP
@@ -19,7 +23,7 @@ from centralNodeReceiver_base import (
 
 
 class centralNodeReceiver_i(centralNodeReceiver_base):
-    """<DESCRIPTION GOES HERE>"""
+    """Aggregate and forward readings from multiple sensor nodes."""
     def constructor(self):
         self.port_message_in.registerMessage(
             "accumMess",
@@ -51,11 +55,13 @@ class centralNodeReceiver_i(centralNodeReceiver_base):
         self.FREQ = 462.6375
 
     def messageReceived(self, msgId, msg):
+        """Handle readings from a node and forward them appropriately."""
         message = FromCentToUpdate()
         if msg.nodeID == 1:
+            # Message from sensor node 1
             self.state[0] = True
-            # Uploaded from a Raspberry Pi to a webpage and pulled data from it
-            # because a direct interface was unavailable
+            # Historically this node pushed data to a webpage rather than
+            # providing a direct interface.
             self.ave1 = msg.aveA
             self.lob1 = msg.aoaA
             logging.info(msg.aveA)
@@ -118,7 +124,6 @@ class centralNodeReceiver_i(centralNodeReceiver_base):
             self.state = [False, True, True]
 
     def process(self):
-
         return NOOP
 
 
