@@ -1,8 +1,11 @@
+
 """Database writer component.
 
 This module stores incoming measurements in a MySQL database.  It was
 originally authored by Cadet David Weidman (USMA Class of 2016) and has
 been updated for Python 3.
+Author:
+Cadet David Weidman USMA Class of 2016
 """
 
 from ossie.resource import start_component
@@ -11,7 +14,6 @@ import MySQLdb as mdb
 import sys
 from ossie.threadedcomponent import NOOP
 from dbwriter_base import dbwriter_base
-
 
 class dbwriter_i(dbwriter_base):
     """Insert received messages into the MySQL database."""
@@ -55,6 +57,7 @@ class dbwriter_i(dbwriter_base):
         # self._log.info("messageReceived *************************")
         # self._log.info("messageReceived msgId " + str(msgId))
         # self._log.info("messageReceived msgData " + str(msgData))
+
         data = [msgData.X, msgData.Y]
 
         if data is None:
@@ -98,10 +101,11 @@ class dbwriter_i(dbwriter_base):
 
         if data is None:
             return NOOP
+      
+        insertString= ""
+        #YYYMMDDHHMMSS = datetime
+        #f = open("rhtest.txt", "wr")
 
-        insertString = ""
-        # YYYYMMDDHHMMSS = datetime
-        # f = open("rhtest.txt", "wr")
         for i in range(0, 7):
             insertString += str(data[i]) + ", "
         insertString += str(data[7])
@@ -114,7 +118,6 @@ class dbwriter_i(dbwriter_base):
 
         )
 # INSERT INTO TestTable(vals) VALUES(vals)
-
 
 if __name__ == '__main__':
     logging.getLogger().setLevel(logging.INFO)

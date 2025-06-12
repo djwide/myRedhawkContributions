@@ -4,6 +4,9 @@ This module receives aggregated measurements from remote nodes and
 forwards a consolidated update to other components as well as a database
 writer.  It is based on early experimental code authored by Cadet David
 Weidman (USMA Class of 2016).
+
+Author:
+Cadet David Weidman USMA Class of 2016
 """
 from ossie.resource import start_component
 import logging
@@ -22,7 +25,6 @@ from centralNodeReceiver_base import (
 class centralNodeReceiver_i(centralNodeReceiver_base):
     """Aggregate and forward readings from multiple sensor nodes."""
     def constructor(self):
-        """Register messages and initialize internal state."""
         self.port_message_in.registerMessage(
             "accumMess",
             centralNodeReceiver_base.AccumMess,
@@ -122,8 +124,6 @@ class centralNodeReceiver_i(centralNodeReceiver_base):
             self.state = [False, True, True]
 
     def process(self):
-
-        """Periodic processing hook for ThreadedComponent."""
         return NOOP
 
 
